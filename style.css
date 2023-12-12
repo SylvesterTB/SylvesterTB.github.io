@@ -1,0 +1,187 @@
+body,
+html {
+    font-size: 150%;
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #efedf3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    padding-bottom: 25px;
+    font-family: Tahoma , Helvetica, sans-serif;
+
+}
+
+header {
+    position: sticky;
+    top: -15px;
+    padding-top: 15px;
+    opacity: 1;
+    color: #E7E7E7;
+}
+
+h1 {
+    font-size: 3.052rem;
+    font-family: Tahoma , Helvetica, sans-serif;
+    color: #772828;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 2.441rem;
+    font-family: Tahoma, Helvetica, sans-serif;
+    color: #bf6363;
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-size: 2.441rem;
+    font-family: Tahoma, Helvetica, sans-serif;
+    color: #ffffff;
+    padding-bottom: 25px;
+
+}
+
+
+section{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hero1_text {
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: Tahoma , Helvetica, sans-serif;
+    color: #000000;
+    line-height: 1.5;
+   
+}
+
+
+
+
+
+
+.main_text {
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: Tahoma , Helvetica, sans-serif;
+    color: #402b2b;
+    line-height: 1.5;    
+    padding-bottom: 40px;
+      margin-top: 50px;
+      margin-right: 400px;
+      margin-left: 400px;
+}
+
+.footer_text {
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 40px;
+    font-size: 24px;
+
+}
+
+
+.hero_image {
+    background-image: url("pexels-roberto-vivancos-2190283.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+
+
+
+nav {
+    font-size: 0.938rem;
+    font-family: Tahoma, Helvetica, sans-serif;
+    color: #000000;
+    top: -15px;
+    opacity: 1;
+    position: fixed; 
+    top: 0; 
+     width: 200%; 
+    background-color: #E7E7E7;
+    z-index: 99999;
+    padding-top: 20px;
+
+    
+}
+
+
+
+nav a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+nav a:active {
+    color: #000000;
+}
+
+nav a:visited {
+    color: black;
+}
+
+p a{
+    text-decoration: none;
+
+}
+
+p a:visited {
+    color: #402b2b;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #940a0a;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #000000;
+    background-color: #E7E7E7;
+    box-shadow: 4px 1px 2px -2px rgba(101, 89, 89, 0.52);
+    transform: translate(2px, 2px);
+    display: inline-block;
+    transition: .5s ease-in-out;
+}
+
+footer {
+    background-color: #bf6363;
+    border: solid #ffffff;
+    margin-bottom: 1rem;
+
+}
+
+footer a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:visited
+
+.image_padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
