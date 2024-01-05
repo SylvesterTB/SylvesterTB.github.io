@@ -15,7 +15,7 @@ html {
 
 p {
     padding-bottom: 25px;
-    font-family: Tahoma , Helvetica, sans-serif;
+    font-family: Tahoma, Helvetica, sans-serif;
 
 }
 
@@ -27,9 +27,10 @@ header {
     color: #E7E7E7;
 }
 
+/* google fonts used in footer link */
 h1 {
     font-size: 3.052rem;
-    font-family: Tahoma , Helvetica, sans-serif;
+    font-family: Tahoma, Helvetica, sans-serif;
     color: #772828;
     padding-top: 100px;
 }
@@ -49,8 +50,7 @@ h3 {
 
 }
 
-
-section{
+section {
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -63,28 +63,24 @@ section{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
-    font-family: Tahoma , Helvetica, sans-serif;
+    font-family: Tahoma, Helvetica, sans-serif;
     color: #000000;
     line-height: 1.5;
-   
+
 }
-
-
-
-
-
 
 .main_text {
     height: 100%;
     text-align: center;
+    
     font-size: 24px;
-    font-family: Tahoma , Helvetica, sans-serif;
+    font-family: Tahoma, Helvetica, sans-serif;
     color: #402b2b;
-    line-height: 1.5;    
+    line-height: 1.5;
     padding-bottom: 40px;
-      margin-top: 50px;
-      margin-right: 400px;
-      margin-left: 400px;
+    margin-top: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
 }
 
 .footer_text {
@@ -96,7 +92,6 @@ section{
 
 }
 
-
 .hero_image {
     background-image: url("pexels-roberto-vivancos-2190283.jpg");
     background-position: center;
@@ -106,33 +101,27 @@ section{
     height: 100%;
 }
 
-
-
-
 nav {
     font-size: 0.938rem;
     font-family: Tahoma, Helvetica, sans-serif;
     color: #000000;
     top: -15px;
     opacity: 1;
-    position: fixed; 
-    top: 0; 
-     width: 200%; 
+    position: fixed;
+    top: 0;
+    width: 200%;
     background-color: #E7E7E7;
     z-index: 99999;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-    
+
 }
-
-
 
 nav a:link {
     text-decoration: none;
     color: #000000;
 }
-
-
 
 nav a:active {
     color: #000000;
@@ -142,7 +131,7 @@ nav a:visited {
     color: black;
 }
 
-p a{
+p a {
     text-decoration: none;
 
 }
@@ -177,11 +166,105 @@ footer {
 footer a:link {
     text-decoration: none;
     color: #000000;
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
-footer a:visited
-
-.image_padding{
+footer a:visited .image_padding {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.nav-desktop {
+    display: block;
+}
+
+@media (max-width: 40rem) {
+    .nav-desktop {
+        display: none;
+    }
+}
+
+
+@media (min-width: 40rem) {
+    .nav-mobile {
+        display: none;
+    }
+}
+
+
+.nav-desktop ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.nav-mobile ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform .5s ease;
+}
+
+@media (max-width: 40rem) {
+    .nav-mobile {
+        transform: translateX(0%);
+    }
+}
+
+.nav-mobile {
+    transform: translateX(-150%);
+    transition: transform .5s ease;
+}
+
+.check {
+    position: absolute;
+    left: -500px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 40rem) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        transform: translateX(-150%);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .nav-icon-hambuger {
+        display: block;
+    }
+
+    .nav-icon-close {
+        display: none;
+    }
+}
+
+.check:checked~.hamburger .nav-icon-hambuger {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.check:checked~.hamburger .nav-icon-close {
+    display: block;
+}
+
+.check:checked~.nav-mobile {
+    transform: translateX(0%);
+}
+
