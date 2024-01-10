@@ -272,7 +272,7 @@ footer a:visited .image_padding {
 }
 
 @media (max-width: 40rem) {
-    .main_text{
+    .main_text {
         height: 100%;
         text-align: center;
         font-size: 16px;
@@ -283,9 +283,26 @@ footer a:visited .image_padding {
         margin-top: 50px;
         margin-right: 40px;
         margin-left: 40px;
-    }   
+    }
 
-    nav{
+    nav {
         opacity: 1;
         padding-top: 20px;
-    } }
+    }
+}
+
+
+@media (min-width: 40rem) and (max-width: 75rem) {
+    .main_text {
+        height: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-family: Tahoma, Helvetica, sans-serif;
+        color: #402b2b;
+        line-height: 1.5;
+        padding-bottom: 20px;
+        margin-top: 50px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
