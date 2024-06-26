@@ -3,7 +3,7 @@ html {
     font-size: 150%;
     scroll-behavior: smooth;
     height: 100%;
-    background-color: #efedf3;
+    background-color: #171820;
 }
 
 *,
@@ -28,11 +28,10 @@ header {
 }
 
 /* google fonts used in footer link */
-
 h1 {
     font-size: 3.052rem;
     font-family: Tahoma, Helvetica, sans-serif;
-    color: #772828;
+    color: #941e1e;
     padding-top: 100px;
 }
 
@@ -46,7 +45,7 @@ h2 {
 h3 {
     font-size: 2.441rem;
     font-family: Tahoma, Helvetica, sans-serif;
-    color: #ffffff;
+    color: #171820;
     padding-bottom: 25px;
 
 }
@@ -65,7 +64,7 @@ section {
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-family: Tahoma, Helvetica, sans-serif;
-    color: #000000;
+    color: #b36161;
     line-height: 1.5;
 
 }
@@ -76,7 +75,7 @@ section {
 
     font-size: 24px;
     font-family: Tahoma, Helvetica, sans-serif;
-    color: #402b2b;
+    color: #9e5757;
     line-height: 1.5;
     padding-bottom: 40px;
     margin-top: 50px;
@@ -87,14 +86,13 @@ section {
 .footer_text {
     height: 100%;
     text-align: center;
-    color: #ffffff;
+    color: #171820;
     padding-bottom: 40px;
     font-size: 24px;
 
 }
-
 .hero_image {
-    background-image: url("pexels-roberto-vivancos-2190283.jpg");
+    background-image: url("images/wp2757874.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,13 +103,13 @@ section {
 nav {
     font-size: 0.938rem;
     font-family: Tahoma, Helvetica, sans-serif;
-    color: #000000;
+    color: #ffffff;
     top: -15px;
     opacity: 1;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #E7E7E7;
+    background-color: #000000;
     z-index: 99999;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -119,43 +117,44 @@ nav {
 
 }
 
-a:link{
-    text-decoration: none;
-    color: green;
-}
-
 nav a:link {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 nav a:active {
-    color: #000000;
+    color: #ffffff;
 }
 
 nav a:visited {
-    color: black;
+    color: #ffffff;
 }
 
 p a {
     text-decoration: none;
 
 }
-
-p a:visited {
-    color: #402b2b;
-    text-decoration: none;
+a, a:link, a:visited {
+  color: #FFFAFA;
+  text-decoration: none;
 }
 
+p a:link{
+    text-decoration: none;
+    color: white;
+}
+
+
+
 p a:hover {
-    color: #940a0a;
+    color: #920707;
     text-decoration: none;
 
 }
 
 nav a:hover {
-    color: #000000;
-    background-color: #E7E7E7;
+    color: #ffffff;
+    background-color: #000000;
     box-shadow: 4px 1px 2px -2px rgba(101, 89, 89, 0.52);
     transform: translate(2px, 2px);
     display: inline-block;
@@ -163,8 +162,8 @@ nav a:hover {
 }
 
 footer {
-    background-color: #bf6363;
-    border: solid #ffffff;
+    background-color: #9e5757;
+    /* border: solid #ffffff; */
     margin-bottom: 1rem;
 
 }
@@ -172,13 +171,19 @@ footer {
 footer a:link {
     text-decoration: none;
     color: #000000;
-    font-family: 'EB Garamond', serif;
-    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'EB Garamond', serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
-footer a:visited .image_padding {
+footer a:visited .image_padding a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #000000;
+    background-color: #E7E7E7;
+    box-shadow: 4px 1px 2px -2px rgba(101, 89, 89, 0.52);
+    transform: translate(2px, 2px);
+    display: inline-block;
+    transition: .5s ease-in-out;
 }
 
 .nav-desktop {
@@ -283,7 +288,7 @@ footer a:visited .image_padding {
         text-align: center;
         font-size: 16px;
         font-family: Tahoma, Helvetica, sans-serif;
-        color: #402b2b;
+        color: #9e5757;
         line-height: 1.5;
         padding-bottom: 20px;
         margin-top: 50px;
@@ -304,7 +309,7 @@ footer a:visited .image_padding {
         text-align: center;
         font-size: 25px;
         font-family: Tahoma, Helvetica, sans-serif;
-        color: #402b2b;
+        color: #9e5757;
         line-height: 1.5;
         padding-bottom: 20px;
         margin-top: 50px;
@@ -317,13 +322,14 @@ footer a:visited .image_padding {
   position: absolute; /* Absolute positioning relative to the nav bar */
   top: 10px; /* Distance from the top */
   right: 10px; /* Distance from the right */
-  padding: 10px 20px ; /* Example padding */
-  background-color: #b6b9cd; /* Example background color */
-  color: #941e1e; /* Example text color */
+  padding: 10px 20px; /* Example padding */
+  background-color: #E7E7E7; /* Example background color */
+  color: #772828; /* Example text color */
   border: none; /* Remove default border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
 }
+
 
 .nav-button:hover{
     background-color: #941e1e;

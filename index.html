@@ -8,8 +8,9 @@
     <title> Sylvester's Webpage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon (2).ico" />
@@ -27,27 +28,31 @@
             <ion-icon name="close-outline" class="nav-icon-close"></ion-icon>
         </label>
         <nav class="nav-desktop">
-      
+
             <ul>
                 <li><a href="#About">About me</a> </li> &nbsp;|&nbsp; <li><a href="#Experience">Experience</a> </li>
                 &nbsp;|&nbsp; <li><a href="#Projects">Projects</a> </li>&nbsp;|&nbsp; <li><a href="#Skills">Skills</a>
-                </li>&nbsp;|&nbsp; <li><a href="#contact">Contact</a></li>
-                </p>
+                </li>&nbsp;|&nbsp; <li><a href="#contact">Contact</a></li> 
+                
             </ul>
+            <button class="nav-button"
+             onclick="changeCSS()">Dark</button>
         </nav>
         <nav class="nav-mobile">
             <input class="check" type="checkbox" id="hamburger-checkbox">
             <label class="hamburger" for="hamburger-checkbox">
                 <ion-icon name="menu-outline" class="nav-icon-hamburger"></ion-icon>
                 <ion-icon name="close-outline" class="nav-icon-close"></ion-icon>
-            <ul>
-                <li><a href="#About">About me</a> </li>
-                <li><a href="#Experience">Experience</a> </li>
-                <li><a href="#Projects">Projects</a> </li>
-                <li><a href="#Skills">Skills</a> </li>
-                <li><a href="#contact">Contact</a></li>
-                </p>
-            </ul>
+                <ul>
+                    <li><a href="#About">About me</a> </li>
+                    <li><a href="#Experience">Experience</a> </li>
+                    <li><a href="#Projects">Projects</a> </li>
+                    <li><a href="#Skills">Skills</a> </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button class="nav-button"
+                         onclick="changeCSS()">Dark</button>
+                </ul>
+                
         </nav>
 
         <div class='hero1_text'>
@@ -60,7 +65,7 @@
             <div class="main_text">
                 <h2> About me </h2>
                 <p> I am Sylvester Broich, a German-American and a Junior at Cambridge Rindge and Latin. I have a strong
-                interest in computer science, and intend to pursue it both academically and professionally. </p>
+                    interest in computer science, and intend to pursue it both academically and professionally. </p>
             </div>
         </section>
     </div>
@@ -68,7 +73,7 @@
         <section>
             <div class='main_text'>
                 <h2> Experience </h2>
-                <p> I have worked at multiple different companies in different positions. I do seasonal work for 
+                <p> I have worked at multiple different companies in different positions. I do seasonal work for
                     <a href="https://pembertonmarketplace.com/" id="pembes_link">Pemberton Farms</a>, where I help
                     customers choose and transport Christmas trees. I also worked as a
                     social media manager for the <a href="https://www.cambridgenc.org/" id="cnc_link">Cambridge
@@ -97,9 +102,13 @@
             <div class='main_text'>
                 <h2> Projects </h2>
                 <p> Some of my projects inclue a MD5 password cracker, a live weather detection website and reporting
-                    system, which utilized the Telegram API and a weather services API. Another project is this website,
-                    which is programmed in HTML and CSS. For info on these projects, check out the README.md files on <a
-                        href="https://github.com/SylvesterTB" id="github">my GitHub <ion-icon name="logo-github">
+                    system, which utilized the Telegram API and a weather services API. My most recent project was a
+                    program that scrapes both a google sheets schedule and a secure website for contact information to generate
+                    automated emails and text messages using Gmail and Twilio API for efficient
+                    communication between teachers and target audiences which I worked on with 3 teammates. Another
+                    project is this website, which is programmed in HTML and CSS. For info on these projects, check out
+                    the README.md files on <a href="https://github.com/SylvesterTB" id="github">my GitHub <ion-icon
+                            name="logo-github">
                         </ion-icon></a>!</p>
             </div>
         </section>
@@ -111,7 +120,7 @@
             <div class='main_text'>
                 <h2> Skills </h2>
                 <p> Native English and German speaker, working knowledge of Python <ion-icon name="logo-python">
-                    </ion-icon>, HTML<ion-icon name="logo-html5"></ion-icon>, and CSS <ion-icon name="logo-css3">
+                    </ion-icon>, HTML<ion-icon name="logo-html5"></ion-icon>, CSS <ion-icon name="logo-css3">
                     </ion-icon>. </p>
             </div>
         </section>
@@ -123,8 +132,10 @@
             <div class='footer_text'>
                 <h3> Contact </h3>
                 <p> Feel free to contact me at <a href="mailto:sylvester.broich@gmail.com"
-                        id="email">sylvester.broich@gmail.com</a>! </p>
-                <p> For more info on all of the above, check out my <a href='https://docs.google.com/document/d/1Gg4I8ZXB-rLnTZKcI--TiIIT1__nIV-Q4Dc_aM3_6pQ/edit?usp=sharing' id='resume'> resume </a></p>
+                        id="email">sylvester.broich@gmail.com</a> and check out! </p>
+                <p> For more info on all of the above, check out my <a
+                        href='https://docs.google.com/document/d/1Gg4I8ZXB-rLnTZKcI--TiIIT1__nIV-Q4Dc_aM3_6pQ/edit?usp=sharing'
+                        id='resume'> resume </a></p>
         </footer>
     </div>
 
