@@ -1,3 +1,4 @@
+/* Common styles */
 body,
 html {
     font-size: 150%;
@@ -16,7 +17,6 @@ html {
 p {
     padding-bottom: 25px;
     font-family: Tahoma, Helvetica, sans-serif;
-
 }
 
 header {
@@ -26,8 +26,6 @@ header {
     opacity: 1;
     color: #E7E7E7;
 }
-
-/* google fonts used in footer link */
 
 h1 {
     font-size: 3.052rem;
@@ -48,7 +46,6 @@ h3 {
     font-family: Tahoma, Helvetica, sans-serif;
     color: #ffffff;
     padding-bottom: 25px;
-
 }
 
 section {
@@ -67,13 +64,11 @@ section {
     font-family: Tahoma, Helvetica, sans-serif;
     color: #000000;
     line-height: 1.5;
-
 }
 
 .main_text {
     height: 100%;
     text-align: center;
-
     font-size: 24px;
     font-family: Tahoma, Helvetica, sans-serif;
     color: #402b2b;
@@ -90,7 +85,6 @@ section {
     color: #ffffff;
     padding-bottom: 40px;
     font-size: 24px;
-
 }
 
 .hero_image {
@@ -115,31 +109,21 @@ nav {
     z-index: 99999;
     padding-top: 10px;
     padding-bottom: 10px;
-
-
 }
 
-a:link{
+a:link {
     text-decoration: none;
     color: green;
 }
 
-nav a:link {
-    text-decoration: none;
-    color: #000000;
-}
-
-nav a:active {
-    color: #000000;
-}
-
+nav a:link,
+nav a:active,
 nav a:visited {
-    color: black;
+    color: #000000;
 }
 
 p a {
     text-decoration: none;
-
 }
 
 p a:visited {
@@ -150,7 +134,6 @@ p a:visited {
 p a:hover {
     color: #940a0a;
     text-decoration: none;
-
 }
 
 nav a:hover {
@@ -164,23 +147,16 @@ nav a:hover {
 
 footer {
     background-color: #bf6363;
-    border: solid #ffffff;
     margin-bottom: 1rem;
-
 }
 
 footer a:link {
     text-decoration: none;
     color: #000000;
     font-family: 'EB Garamond', serif;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
-footer a:visited .image_padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
+/* Navigation */
 .nav-desktop {
     display: block;
 }
@@ -191,14 +167,11 @@ footer a:visited .image_padding {
     }
 }
 
-
 @media (min-width: 40rem) {
     .nav-mobile {
         display: none;
-
     }
 }
-
 
 .nav-desktop ul {
     display: flex;
@@ -214,7 +187,6 @@ footer a:visited .image_padding {
     gap: 16px;
     transition: transform .5s ease;
     padding-left: 15px;
-
 }
 
 @media (max-width: 40rem) {
@@ -297,7 +269,6 @@ footer a:visited .image_padding {
     }
 }
 
-
 @media (min-width: 40rem) and (max-width: 75rem) {
     .main_text {
         height: 100%;
@@ -314,18 +285,18 @@ footer a:visited .image_padding {
 }
 
 .nav-button {
-  position: absolute; /* Absolute positioning relative to the nav bar */
-  top: 10px; /* Distance from the top */
-  right: 10px; /* Distance from the right */
-  padding: 10px 20px ; /* Example padding */
-  background-color: #b6b9cd; /* Example background color */
-  color: #941e1e; /* Example text color */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #E7E7E7;
+    color: #772828;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.nav-button:hover{
+.nav-button:hover {
     background-color: #941e1e;
     color: #171820;
 }
