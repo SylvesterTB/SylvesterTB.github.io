@@ -291,9 +291,11 @@ footer a:link {
     padding: 10px 20px;
     background-color: #E7E7E7;
     color: #772828;
-    border: none;
+    border-style: solid;
     border-radius: 5px;
     cursor: pointer;
+    border-color: #171820;
+    
 }
 
 .nav-button:hover {
